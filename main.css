@@ -1,0 +1,214 @@
+/* Primary */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  color: #2978A0;
+  /* background-color: #98FB98; */
+}
+html, body {
+  height: 100%;
+}
+a {
+  color: #315659;
+  text-decoration: none;
+}
+/* Main Part */
+.main{
+  padding: 20px;
+  color: #FFFFFF;
+  background-color: #8FBC8B;
+  font-size: 30px;
+  font-family:"Avantgarde, TeX Gyre Adventor, URW Gothic L", sans-serif;
+  text-align: center;
+  text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15), 10px 3px 2px rgba(206,89,55,0);
+}
+#main2{
+  color: #8B4513;
+  text-align: center;
+  font-family: Georgia, serif;
+  font-size: 30px;
+  letter-spacing: 3.2px;
+  word-spacing: -4.6px;
+  font-weight: 400;
+  text-decoration: overline solid rgb(68, 68, 68);
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: capitalize;
+}
+
+/* Navigation Part*/
+.tab{
+  /* position: absolute; */
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 20%;
+  width: 100%;
+  text-align: center;
+  display: table;
+  overflow: auto;
+  background-color: #FFEBCD;
+}
+.tab li{
+  display: inline;
+}
+.tab ul {
+  display: table-cell;
+  vertical-align: middle;
+  list-style: none;
+}
+.tab a {
+  display: inline-block;
+  padding: .4em 1em;
+  border-radius: 4px;
+  color: #556B2F;
+  font-family: "Playfair Display", serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.tab a:hover {
+  color: #FFFFFF;
+  background-color: #303e40;
+}
+hr{width: 50%;}
+
+#title{
+  color: #BC8F8F;
+  text-align: center;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 20px;
+  letter-spacing: 3.2px;
+  word-spacing: -4.6px;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: uppercase;
+}
+
+/* Similarities in About, Contact & Work Page */
+.about-body, .contact-body, .work-body{
+  margin-bottom: 70px;
+  text-align: center;
+}
+.about-body h4, .contact-body h4, .work-body h4{
+  font-family: Georgia, serif;
+  font-size: 25px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #000000;
+  font-weight: 400;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: capitalize;
+}
+
+
+/* About in Home Page */
+.about{
+
+}
+/* About in About Page */
+.about-body{
+  text-align: center;
+}
+.about-body li{
+  list-style: none;
+  margin: 10px;
+}
+.row-about{
+  margin-top: 30px; margin-left: 20px;margin-right: 20px;
+  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px -15px rgba(0,0,0,0);
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px -15px rgba(0,0,0,0);
+}
+.column-about {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  background-color:#FFFFE0;
+  border: 9px outset #ADFF2F;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+.row-about:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Work */
+.work{
+
+}
+/* Work in Work Page*/
+.work-body{
+
+}
+.work-container {
+  margin-left: 20%;
+  margin-right: auto;
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+.work-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.work-container:hover .overlay {
+  opacity: 1;
+}
+
+
+
+
+
+
+/* Contact */
+.contact{
+
+}
+/* Contact in Contact Page*/
+.contact-body{
+
+}
+.contact-body ul{
+  list-style: none;
+}
+.contact-body li{
+  margin: 15px;
+  color: #008080;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 15px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  font-weight: 400;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+}
